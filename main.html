@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>방야</title>
+  <link href="css/style.css" rel="stylesheet">
+  <!-- javaScript  -->
+
+
+  <script type="text/javascript" src="js/moment-with-locales.min.js"></script>
+  <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="js/jquery.daterangepicker.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
+
+</head>
+
+<body>
+  <!-- S:skip_navi -->
+  <div class="skip_navi"> <a class="sr-only sr-only-focusable" href="#content">본문 바로가기</a> <a class="sr-only sr-only-focusable" href="#footer">푸터 바로가기</a> </div>
+  <!-- E:skip_navi -->
+  <!-- S:header -->
+  <header id="header">
+    <div class="container">
+      <h1><a href="/" title="방야 홈 바로가기">방야</a></h1>
+
+      <fieldset class="search-form">
+        <legend class="sr-only">통합검색</legend>
+        <div class="outline">
+          <h2 class="sr-only">통합검색</h2>
+          <label class="sr-only" for="search">검색어를 입력하세요</label>
+          <input id="search" type="text" placeholder="search">
+          <button>검색<i class="icon-search"></i></button>
+        </div>
+      </fieldset>
+
+      <div class="buttons">
+        <div class="outline">
+          <a href=""><i class="icon-user"></i>회원가입</a>
+          <a href=""><i class="icon-lock"></i>로그인</a>
+          <a href=""><i class="icon-check"></i>예약확인</a>
+        </div>
+      </div>
+      <div class="toggle">
+        <button class="search" name="search">검색토글<i class="icon-search"></i></button>
+        <button class="menu" name="menu">메뉴토글<i class="icon-menu"></i></button>
+      </div>
+
+    </div>
+  </header>
+  <!-- E:header -->
+  <!-- S:content -->
+  <main id="content" class="main">
+
+    <!-- main hero -->
+    <section class="hero">
+      <div class="container">
+        <fieldset>
+          <legend class="sr-only">숙박검색</legend>
+
+          <h2>즐거운 여행의 마무리 <strong>숙소</strong><small>방야에서 편하고 쉽게 찾아보세요.</small></h2>
+
+          <button class="region"><i class="icon-location"></i><strong>지역선택</strong></button>
+
+          <button class="input-date"><i class="icon-calendar"></i><strong>체크인 ~ 체크아웃</strong></button>
+          <button class="count"><i class="icon-user"></i><strong>인원</strong></button>
+
+          <button class="submit">검색</button>
+        </fieldset>
+      </div>
+    </section>
+    <!--// main hero -->
+
+    <!-- main links -->
+    <section class="type-link">
+      <div class="container">
+        <h2 class="sr-only">현재위치 기준 타입별 숙소보기</h2>
+
+        <h3 class="location"><i class="icon-location"></i>현재위치<small>제주특별자치도 제주시 서사로 92</small></h3>
+        <ul>
+          <li><a class="type1" href=""><i class="icon-type1"></i>호텔</a></li>
+          <li><a class="type2" href=""><i class="icon-type2"></i>리조트</a></li>
+          <li><a class="type3" href=""><i class="icon-type3"></i>펜션</a></li>
+          <li><a class="type4" href=""><i class="icon-type4"></i>모텔</a></li>
+          <li><a class="type5" href=""><i class="icon-type5"></i>게스트하우스</a></li>
+          <li class="no"><a href=""><i class="icon-plus"></i>전체보기</a></li>
+        </ul>
+      </div>
+    </section>
+    <!--// main links -->
+
+    <!-- main links -->
+    <section class="ad">
+      <div class="container">
+        <h2 class="sr-only">모바일에서도 방야!</h2>
+        <h3>
+          <i class="icon-location"></i>내 위치 주변의 숙박예약
+          <small>자신이 있는 위치에서의 가까운 숙박으로 <u>예약 및 조회가 가능하여 더욱 편리합니다.</u></small>
+        </h3>
+        <h3>
+          <i class="icon-wifi"></i>모바일에서도 쉽고 빠르게!
+          <small>방야는 모바일에서도 편리하게 <u>숙박 예약 및 조회가 가능합니다.</u></small>
+        </h3>
+
+      </div>
+    </section>
+        <!--// main links -->
+
+
+
+
+    <div class="region no-resize">
+      <p><input id="region01" class="sr-only" type="checkbox"><label for="region01"><i class="icon-check"></i>전라북도</label></p>
+      <p><input id="region02" class="sr-only" type="checkbox"><label for="region02"><i class="icon-check"></i>서귀포시</label></p>
+    </div>
+    <div class="count no-resize">
+      <div class="outline">
+        <div><label for="age01">성인</label><i class="icon-minus-circle"></i><input id="age01" type="text" value="0"><i class="icon-plus-circle"></i></div>
+        <div><label for="age02">청소년</label><i class="icon-minus-circle"></i><input id="age02" type="text" value="0"><i class="icon-plus-circle"></i></div>
+        <div><label for="age03">유아</label><i class="icon-minus-circle"></i><input id="age03" type="text" value="0"><i class="icon-plus-circle"></i></div>
+        <button>선택완료</button>
+      </div>
+    </div>
+
+
+  </main>
+  <!-- E:content -->
+  <!-- S:footer -->
+  <footer id="footer">
+
+    <nav class="footer-menu">
+      <div class="container">
+
+        <h2 class="sr-only">Footer 메뉴</h2>
+        <ul>
+          <li><a href="">공지사항</a></li>
+          <li><a href="">FAQ</a></li>
+          <li><a href="">회사소개</a></li>
+          <li><a href="">이용약관</a></li>
+          <li><a href="">개인정보처리방침</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <div class="container">
+
+      <address>
+        <strong>(주)인포마인드</strong>
+        <p>대표:강희석 (63176)제주특별자치도 제주시 서사로 92, 807(삼도일동, 제동해피죤)</p>
+        <p>Tel.064)712-4787 Fax. 064)712-4786</p>
+      </address>
+
+      <p class="copyright">© INFOMIND</p>
+    </div>
+  </footer>
+  <!-- E:footer -->
+</body>
+
+</html>
