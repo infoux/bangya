@@ -85,7 +85,7 @@ $(document).ready(function () {
       $("button.count").toggleClass("active");
       $("div.count").toggle();
 
-      var txt = "성인 "+ $("#age01").val() +" / 청소년"+ $("#age02").val() +" / 유아"+ $("#age03").val() +"";
+      var txt = "성인 "+ $("#age01").val() +" / 청소년 "+ $("#age02").val() +" / 유아 "+ $("#age03").val() +"";
 
       $("button.count strong").html(txt);
 

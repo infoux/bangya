@@ -454,7 +454,7 @@ body {
 }
 @media (min-width:1200px) {
   html {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -518,7 +518,10 @@ body {
         .middle;
         .rem(width, 67);
         .rem(height, 33);
-
+        @media all and (min-width: 1200px) {
+          width:90px;
+          height:44px;
+        }
         a {
           .block;
           .full;
@@ -558,7 +561,12 @@ body {
             .rem(font-size, 18);
             .rem(padding, 10);
             .remCalc(width, 40);
+            .rem(height, 40);
             background:transparent;
+
+            @media all and (min-width: 1200px) {
+              height:44px;
+            }
           }
 
           button {
@@ -583,6 +591,7 @@ body {
           .static;
           .mapazero;
           background: @white;
+          font-size:16px;
         }
 
         div.outline {
@@ -590,7 +599,6 @@ body {
           .rem(margin, 10);
           .rem(border-radius, 10);
           .rem(padding, 20 5);
-          .rem(font-size, 13);
           line-height: normal;
           .center;
           @media all and (min-width: 1200px) {
@@ -625,7 +633,7 @@ body {
 
           i {
             .top;
-            .rem(font-size, 18);
+            .rem(font-size, 20);
           }
 
           &.search {
@@ -718,7 +726,7 @@ body {
               .block;
               .left;
               .rem(height, 35);
-              .rem(width, 220);
+              .rem(width, 240);
               .rem(margin, 0 auto 10);
               .rem(border-radius, 17.5);
               .rem(padding, 0 10);
@@ -729,6 +737,10 @@ body {
               @media all and (min-width: 1200px) {
                 .inline-block;
                 margin:0 5px 0;
+                height:50px;
+                width:260px;
+                border-radius:25px;
+                font-size:16px;
               }
 
 
@@ -745,7 +757,7 @@ body {
             button.submit {
               .block;
               .rem(height, 35);
-              .rem(width, 220);
+              .rem(width, 240);
               .rem(margin, 0 auto 10);
               .rem(border-radius, 17.5);
               .rem(padding, 0 10);
@@ -760,6 +772,9 @@ body {
                 .inline-block;
                 margin:0 10px 0;
                 width:160px;
+                height:50px;
+                font-size:16px;
+                border-radius:25px;
               }
 
 
@@ -1035,6 +1050,71 @@ body {
     }
   }
 
+  #content.member {
+    .inline-block;
+    border-top:1px solid @gray-lighter;
+    width:100%;
+
+    section {
+      .container {
+        .center;
+        .rem(padding, 0 30);
+        fieldset {
+          border:0;
+          .mapazero;
+
+          h3 {
+            .rem(font-size, 25);
+            small {
+              .rem(font-size, 12);
+            }
+          }
+
+          input[type="text"] {
+            border:none;
+            background:@gray-lighter;
+            width:100%;
+            .rem(height, 30);
+            .rem(margin-bottom, 4);
+            .rem(padding, 0 10);
+          }
+
+          button.submit {
+            .block;
+            .rem(height, 35);
+            .rem(margin, 10 auto 10);
+            .rem(border-radius, 17.5);
+            .rem(padding, 0 10);
+            width:100%;
+            color: #682601;
+            font-weight: 600;
+            border-color: transparent;
+            border-top-color: #fee27d;
+            .gradient(#ffc71f, #ffbc1f, #ffaf20);
+            .pointer;
+
+            @media all and (min-width: 1200px) {
+              .inline-block;
+              margin:0 10px 0;
+            }
+          }
+        }
+
+      }
+
+
+      &.login-links {
+        a {
+          .inline-block;
+          .rem(font-size, 12);
+          .rem(margin-right, 20);
+        }
+      }
+
+    }
+  }
+
+
   footer#footer {
     background:@gray-dark;
     color:@gray-light;
@@ -1053,13 +1133,17 @@ body {
           li {
             .inline-block;
             .rem(margin-right, 10);
-
+            @media all and (min-width: 1200px) {
+              margin-right:20px;
+            }
             a {
               .block;
               .rem(font-size, 12);
               .rem(line-height, 22);
               color:@gray-light;
-
+              @media all and (min-width: 1200px) {
+                font-size:16px;
+              }
             }
           }
         }
@@ -1088,6 +1172,7 @@ body {
           @media all and (min-width: 1200px) {
             .inline-block;
             margin-right:10px;
+            font-size:14px;
           }
         }
       }
@@ -1110,7 +1195,7 @@ body {
     .none;
     .absolute;
     .left;
-    .rem(width, 220);
+    .rem(width, 240);
     .rem(border-radius, 17.5);
     .rem(height, 35);
     .rem(line-height, 35);
@@ -1121,9 +1206,13 @@ body {
     .center;
 
     @media all and (min-width: 1200px) {
-      margin-top:50px;
-
+      margin-top:60px;
+      width:260px;
+      height:50px;
+      line-height:50px;
+      border-radius:25px;
       .drop-shadow ();
+      font-size:16px;
 
       &::after {
         content: '';
@@ -1159,26 +1248,6 @@ body {
       }
     }
 
-    div {
-      .rem(margin, 10 0);
-
-      label {
-        .inline-block;
-        .rem(width, 60);
-        .left;
-      }
-
-      i {
-        color: #f4b92c;
-      }
-
-      input {
-        .rem(width, 50);
-        border: none;
-        .center;
-        color: @orange;
-      }
-    }
   }
 
   div.count {
@@ -1191,7 +1260,7 @@ body {
     div.outline {
       .absolute;
       .left;
-      .rem(width, 220);
+      .rem(width, 240);
       .rem(border-radius, 17.5);
       .rem(padding, 10 10);
       .rem(min-height, 35);
@@ -1201,12 +1270,16 @@ body {
       .pointer;
       .center;
 
-          @media all and (min-width: 1200px) {
-            margin-top:50px;
+      @media all and (min-width: 1200px) {
+        margin-top:60px;
+        width:260px;
+        min-height:50px;
+        border-radius:25px;
+        font-size:16px;
 
-            .drop-shadow ();
+        .drop-shadow ();
 
-            &::after {
+        &::after {
               content: '';
               .absolute;
               border-left: 10px solid transparent;
@@ -1218,34 +1291,14 @@ body {
             }
           }
 
-      p {
-        .inline-block;
-        margin: 0;
-        .rem(padding, 0 5);
 
-        label {
-          .pointer;
-
-          i {
-            color: @gray;
-          }
-        }
-
-        input[type="checkbox"]:checked + label {
-          color: @orange;
-
-          i {
-            color: @orange;
-          }
-        }
-      }
 
       div {
         .rem(margin, 10 0);
 
         label {
           .inline-block;
-          .rem(width, 60);
+          .rem(width, 70);
           .left;
         }
 
@@ -1266,11 +1319,10 @@ body {
         border: none;
         color: @white;
         .rem(padding, 0 20);
-        .rem(height, 26);
-        .rem(line-height, 26);
-        .rem(border-radius, 13);
+        .rem(height, 32);
+        .rem(line-height, 32);
+        .rem(border-radius, 16);
         .rem(margin-top, 16);
-        .rem(font-size, 12);
         .pointer;
       }
     }
@@ -1285,7 +1337,7 @@ body {
     div.month-wrapper {
       .absolute;
 
-      .rem(width, 220);
+      .rem(width, 240);
       .rem(margin, -35 0 0);
       .rem(padding, 10);
       background: @white;
@@ -1294,7 +1346,9 @@ body {
 
       @media all and (min-width: 1200px) {
         margin:10px 0 0 0;
+        padding:20px;
         width:500px;
+        border-radius:25px;
         .drop-shadow ();
 
         &::after {
@@ -1311,10 +1365,12 @@ body {
 
       table {
         width: 100%;
+        .rem(margin-bottom, 20);
 
         @media all and (min-width: 1200px) {
           width:calc(~"(100% - 20px) / 2");
           float:left;
+          font-size:16px;
 
           &.month1 {
             margin-right:20px;
@@ -1328,8 +1384,8 @@ body {
               .middle;
 
               &.arrow {
-                .rem(font-size, 8);
                 .rem(padding-top, 2);
+                .pointer;
 
                 span {
                   .rem(padding, 4);
@@ -1353,7 +1409,6 @@ body {
           }
 
           &.week-name {
-            .rem(font-size, 12);
             color: @orange;
 
             th {
@@ -1363,9 +1418,9 @@ body {
 
           td {
             .day {
-              .rem(font-size, 10);
-              .rem(height, 18);
-              .rem(line-height, 18);
+              .rem(font-size, 14);
+              .rem(height, 24);
+              .rem(line-height, 24);
               .rem(margin, 2 0);
               color: @gray-dark;
 
@@ -1409,7 +1464,7 @@ body {
       .absolute;
       background: @black;
       color: @white;
-      .rem(font-size, 8);
+      .rem(font-size, 10);
       .rem(margin, -10 0 0 -4);
       .rem(padding, 4);
       .rem(border-radius, 4);
@@ -1431,11 +1486,9 @@ body {
       border: none;
       color: @white;
       .rem(padding, 0 20);
-      .rem(height, 26);
-      .rem(line-height, 26);
-      .rem(border-radius, 13);
-      .rem(margin-top, 16);
-      .rem(font-size, 12);
+      .rem(height, 32);
+      .rem(line-height, 32);
+      .rem(border-radius, 16);
 
       &.disabled {
         background: @gray;
