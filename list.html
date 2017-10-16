@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>방야</title>
+  <link href="css/style.css" rel="stylesheet">
+  <!-- javaScript  -->
+
+
+  <script type="text/javascript" src="js/moment-with-locales.min.js"></script>
+  <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="js/jquery.daterangepicker.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.js"></script>
+  <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
+
+</head>
+
+
+<body>
+  <!-- S:skip_navi -->
+  <div class="skip_navi"> <a class="sr-only sr-only-focusable" href="#content">본문 바로가기</a> <a class="sr-only sr-only-focusable" href="#footer">푸터 바로가기</a> </div>
+  <!-- E:skip_navi -->
+  <!-- S:header -->
+  <header id="header">
+    <div class="container">
+      <h1><a href="/" title="방야 홈 바로가기">방야</a></h1>
+
+      <fieldset class="search-form">
+        <legend class="sr-only">통합검색</legend>
+        <div class="outline">
+          <h2 class="sr-only">통합검색</h2>
+          <label class="sr-only" for="search">검색어를 입력하세요</label>
+          <input id="search" type="text" placeholder="search">
+          <button>검색<i class="icon-search"></i></button>
+        </div>
+      </fieldset>
+
+      <div class="buttons">
+        <div class="outline">
+          <a href=""><i class="icon-user"></i>회원가입</a>
+          <a href=""><i class="icon-lock"></i>로그인</a>
+          <a href=""><i class="icon-check"></i>예약확인</a>
+        </div>
+      </div>
+      <div class="toggle">
+        <button class="search" name="search">검색토글<i class="icon-search"></i></button>
+        <button class="menu" name="menu">메뉴토글<i class="icon-menu"></i></button>
+      </div>
+
+    </div>
+  </header>
+  <!-- E:header -->
+  <!-- S:content -->
+  <div id="content" class="lodge">
+    <article id="navigator">
+      <div class="container">
+        <button class="modify" href="/"><i class="icon-pen"></i>일정수정</button>
+        <h2>제주</h2>
+        <p>2017.10.10 ~ 2017.10.10</p>
+        <p>성인 0명, 청소년 0명, 소아 0명</p>
+      </div>
+      <fieldset class="lodge-search">
+        <legend class="sr-only">숙박검색</legend>
+        <div class="container">
+          <button class="region"><i class="icon-location"></i><strong>지역선택</strong></button>
+          <button class="input-date"><i class="icon-calendar"></i><strong>체크인 ~ 체크아웃</strong></button>
+          <button class="count"><i class="icon-user"></i><strong>인원</strong></button>
+          <button class="submit">검색</button>
+          <button class="close">닫기</button>
+        </div>
+      </fieldset>
+    </article>
+
+    <section class="sort-list">
+      <div class="container">
+        <button class="lodge-type" name="type"><i class="icon-plus"></i><i class="icon-minus"></i>숙소유형</button>
+
+        <!-- 숙소유형 선택시 하나씩 나타남 (PC전용)
+        <ul class="lodge-list">
+          <li>호텔</li>
+          <li>리조트</li>
+          <li>펜션</li>
+        </ul>
+      //-->
+
+
+
+        <button class="lodge-price" name="price"><i class="icon-plus"></i><i class="icon-minus"></i>가격</button>
+
+        <!-- 가격 선택시 나타남 (PC전용)
+        <div id="amount">
+          <p class="min"></p> ~
+          <p class="max"></p>
+        </div>
+      //-->
+
+
+        <p class="location">
+          <i class="icon-location"></i> <strong>현재위치</strong> 제주특별자치도 제주시 서사로 92
+
+          <button class="btn-map" name="map"><i class="icon-map"></i>지도</button>
+        </p>
+
+      </div>
+    </section>
+
+    <section class="list">
+      <div class="container">
+        <h2 class="sr-only">조건별 숙소 리스트</h2>
+
+        <div class="item-list">
+          <ul>
+            <li>
+              <a href="">
+                <p class="image">
+                  <img src="images/@tmp01.jpg" alt="">
+                </p>
+                <h3>빵야게스트하우스</h3>
+                <p class="location">
+                  <i class="icon-location"></i> 제주특별자치도 제주시 서사로 92
+                </p>
+                <p class="grade">
+                  <i class="icon-star on"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <u>(후기 100개)</u>
+                </p>
+                <p class="price">~100,000</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <p class="image">
+                  <img src="images/@tmp01.jpg" alt="">
+                </p>
+                <h3>빵야게스트하우스</h3>
+                <p class="location">
+                  <i class="icon-location"></i> 제주특별자치도 제주시 서사로 92
+                </p>
+                <p class="grade">
+                  <i class="icon-star on"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <u>(후기 100개)</u>
+                </p>
+                <p class="price">~100,000</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <p class="image">
+                  <img src="images/@tmp01.jpg" alt="">
+                </p>
+                <h3>빵야게스트하우스</h3>
+                <p class="location">
+                  <i class="icon-location"></i> 제주특별자치도 제주시 서사로 92
+                </p>
+                <p class="grade">
+                  <i class="icon-star on"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <u>(후기 100개)</u>
+                </p>
+                <p class="price">~100,000</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <p class="image">
+                  <img src="images/@tmp01.jpg" alt="">
+                </p>
+                <h3>빵야게스트하우스</h3>
+                <p class="location">
+                  <i class="icon-location"></i> 제주특별자치도 제주시 서사로 92
+                </p>
+                <p class="grade">
+                  <i class="icon-star on"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <u>(후기 100개)</u>
+                </p>
+                <p class="price">~100,000</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <p class="image">
+                  <img src="images/@tmp01.jpg" alt="">
+                </p>
+                <h3>빵야게스트하우스</h3>
+                <p class="location">
+                  <i class="icon-location"></i> 제주특별자치도 제주시 서사로 92
+                </p>
+                <p class="grade">
+                  <i class="icon-star on"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <u>(후기 100개)</u>
+                </p>
+                <p class="price">~100,000</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <p class="image">
+                  <img src="images/@tmp01.jpg" alt="">
+                </p>
+                <h3>빵야게스트하우스</h3>
+                <p class="location">
+                  <i class="icon-location"></i> 제주특별자치도 제주시 서사로 92
+                </p>
+                <p class="grade">
+                  <i class="icon-star on"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <u>(후기 100개)</u>
+                </p>
+                <p class="price">~100,000</p>
+              </a>
+            </li>
+          </ul>
+
+          <div class="pagenation">
+            <a class="move" href="">이전<i class="icon-left-open"></i></a>
+            <a href="">1</a>
+            <a href="">2</a>
+            <strong>3</strong>
+            <a href="">4</a>
+            <a href="">5</a>
+            <a class="move" href="">다음<i class="icon-right-open"></i></a>
+          </div>
+
+        </div>
+
+        <div class="item-map ">
+          <div class="outline">
+            <h3 class="sr-only">범례</h3>
+            <ul class="legend">
+              <li class="type1">호텔</li>
+              <li class="type2">리조트</li>
+              <li class="type3">펜션</li>
+              <li class="type4">모텔</li>
+              <li class="type5">게스트하우스</li>
+            </ul>
+            <div class="map-area">
+              <!-- 지도공간 -->
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <div class="region no-resize">
+      <p><input id="region01" class="sr-only" type="checkbox"><label for="region01"><i class="icon-check"></i>전라북도</label></p>
+      <p><input id="region02" class="sr-only" type="checkbox"><label for="region02"><i class="icon-check"></i>서귀포시</label></p>
+    </div>
+    <div class="count no-resize">
+      <div class="outline">
+        <div><label for="age01">성인</label><i class="icon-minus-circle"></i><input id="age01" type="text" value="0"><i class="icon-plus-circle"></i></div>
+        <div><label for="age02">청소년</label><i class="icon-minus-circle"></i><input id="age02" type="text" value="0"><i class="icon-plus-circle"></i></div>
+        <div><label for="age03">유아</label><i class="icon-minus-circle"></i><input id="age03" type="text" value="0"><i class="icon-plus-circle"></i></div>
+        <button>선택완료</button>
+      </div>
+    </div>
+
+    <div class="lodge-type no-resize">
+      <div class="outline">
+
+        <p><input id="type01" class="sr-only" type="checkbox"><label for="type01"><i class="icon-check"></i>호텔</label></p>
+        <p><input id="type02" class="sr-only" type="checkbox"><label for="type02"><i class="icon-check"></i>리조트</label></p>
+        <p><input id="type03" class="sr-only" type="checkbox"><label for="type03"><i class="icon-check"></i>펜션</label></p>
+        <p><input id="type04" class="sr-only" type="checkbox"><label for="type04"><i class="icon-check"></i>모텔</label></p>
+        <p><input id="type05" class="sr-only" type="checkbox"><label for="type05"><i class="icon-check"></i>게스트하우스</label></p>
+        <button>선택완료</button>
+      </div>
+    </div>
+
+    <div class="lodge-price no-resize">
+      <div class="outline">
+        <div class="slider-border">
+          <div id="range-slider"></div>
+        </div>
+        <div id="amount">
+          <p class="min"></p>
+          <p class="max"></p>
+        </div>
+        <script type="text/javascript">
+          $(document).ready(function() {
+
+            ! function(a) {
+              function f(a, b) {
+                if (!(a.originalEvent.touches.length > 1)) {
+                  a.preventDefault();
+                  var c = a.originalEvent.changedTouches[0],
+                    d = document.createEvent("MouseEvents");
+                  d.initMouseEvent(b, !0, !0, window, 1, c.screenX, c.screenY, c.clientX, c.clientY, !1, !1, !1, !1, 0, null), a.target.dispatchEvent(d)
+                }
+              }
+              if (a.support.touch = "ontouchend" in document, a.support.touch) {
+                var e, b = a.ui.mouse.prototype,
+                  c = b._mouseInit,
+                  d = b._mouseDestroy;
+                b._touchStart = function(a) {
+                  var b = this;
+                  !e && b._mouseCapture(a.originalEvent.changedTouches[0]) && (e = !0, b._touchMoved = !1, f(a, "mouseover"), f(a, "mousemove"), f(a, "mousedown"))
+                }, b._touchMove = function(a) {
+                  e && (this._touchMoved = !0, f(a, "mousemove"))
+                }, b._touchEnd = function(a) {
+                  e && (f(a, "mouseup"), f(a, "mouseout"), this._touchMoved || f(a, "click"), e = !1)
+                }, b._mouseInit = function() {
+                  var b = this;
+                  b.element.bind({
+                    touchstart: a.proxy(b, "_touchStart"),
+                    touchmove: a.proxy(b, "_touchMove"),
+                    touchend: a.proxy(b, "_touchEnd")
+                  }), c.call(b)
+                }, b._mouseDestroy = function() {
+                  var b = this;
+                  b.element.unbind({
+                    touchstart: a.proxy(b, "_touchStart"),
+                    touchmove: a.proxy(b, "_touchMove"),
+                    touchend: a.proxy(b, "_touchEnd")
+                  }), d.call(b)
+                }
+              }
+            }(jQuery);
+
+            $("#range-slider").slider({
+              range: true,
+              min: 0,
+              max: 200000,
+              values: [18000, 182000],
+              slide: function(event, ui) {
+                $("#amount .min").html("최소<strong>" + addCommas(ui.values[0]) + "원</strong>");
+                $("#amount .max").html("<strong>" + addCommas(ui.values[1]) + "원</strong>최대");
+              }
+            });
+
+            $("#amount .min").html("최소<strong>" + addCommas($("#range-slider").slider("values", 0)) + "원</strong>");
+            $("#amount .max").html("<strong>" + addCommas($("#range-slider").slider("values", 1)) + "원</strong>최대");
+          });
+
+          function addCommas(nStr) {
+            nStr += '';
+            x = nStr.split('.');
+            x1 = x[0];
+            x2 = x.length > 1 ? '.' + x[1] : '';
+            var rgx = /(\d+)(\d{3})/;
+            while (rgx.test(x1)) {
+              x1 = x1.replace(rgx, '$1' + ',' + '$2');
+            }
+            return x1 + x2;
+          }
+        </script>
+        <button>선택완료</button>
+      </div>
+    </div>
+
+
+  </div>
+  <!-- E:content -->
+  <!-- S:footer -->
+  <footer id="footer">
+
+    <nav class="footer-menu">
+      <div class="container">
+
+        <h2 class="sr-only">Footer 메뉴</h2>
+        <ul>
+          <li><a href="">공지사항</a></li>
+          <li><a href="">FAQ</a></li>
+          <li><a href="">회사소개</a></li>
+          <li><a href="">이용약관</a></li>
+          <li><a href="">개인정보처리방침</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <div class="container">
+
+      <address>
+          <strong>(주)인포마인드</strong>
+          <p>대표:강희석 (63176)제주특별자치도 제주시 서사로 92, 807(삼도일동, 제동해피죤)</p>
+          <p>Tel.064)712-4787 Fax. 064)712-4786</p>
+        </address>
+
+      <p class="copyright">© INFOMIND</p>
+    </div>
+  </footer>
+  <!-- E:footer -->
+</body>
+
+</html>

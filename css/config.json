@@ -163,6 +163,122 @@
       "css": "wifi",
       "code": 61931,
       "src": "fontawesome"
+    },
+    {
+      "uid": "8e04c98c8f5ca0a035776e3001ad2638",
+      "css": "facebook",
+      "code": 61594,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "627abcdb627cb1789e009c08e2678ef9",
+      "css": "twitter",
+      "code": 61593,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "c8137424e43696652d598766015e9686",
+      "css": "kakao",
+      "code": 59407,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M544.2 0C243.7 0 0 192.7 0 430.3 0 585 103.3 720.5 258.2 796.3 247.3 838.8 216.9 950.3 211.1 974.1 203.7 1003.7 221.9 1003.3 233.8 995.9 243.2 989.7 382.9 894.6 443.2 853.6A688.1 688.1 0 0 0 544.2 861C844.8 861 1088.5 668.3 1088.5 430.7S844.8 0 544.2 0Z",
+        "width": 1088
+      },
+      "search": [
+        "kakao"
+      ]
+    },
+    {
+      "uid": "92958ea0895e0daf455a7d8ea0aaecb5",
+      "css": "home",
+      "code": 59408,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M838.8 1000H186.4V580.6H279.6V906.8H745.6V580.6H838.8ZM956.2 612.3L511.6 137 68 612.3 0 548.9 511.6 0 1025.2 548.9Z",
+        "width": 1023
+      },
+      "search": [
+        "home"
+      ]
+    },
+    {
+      "uid": "37910a1398001a5ccb541cb2a253a2c7",
+      "css": "right-open",
+      "code": 61446,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "f11c9e95ae5eaa84d193e8fa1d38c6f9",
+      "css": "down-open-mini",
+      "code": 59409,
+      "src": "entypo"
+    },
+    {
+      "uid": "43bea4e846a52a9d2b6c214e161c1998",
+      "css": "pen",
+      "code": 59410,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M0 1000L87.3 582.7 670 0 1000.9 330.9 417.3 913.6ZM367.6 827.2L870.4 330.9 670 129.6 171.9 628.7",
+        "width": 1000
+      },
+      "search": [
+        "pen"
+      ]
+    },
+    {
+      "uid": "1256e3054823e304d7e452a589cf8bb8",
+      "css": "minus",
+      "code": 59411,
+      "src": "entypo"
+    },
+    {
+      "uid": "18e10551991595ed10a5a083047a4895",
+      "css": "map",
+      "code": 59412,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M993.6 1000L650.8 723.2 343.5 971.6 0 694.8V0L342.8 276.8 650.8 28.4 993.6 305.9ZM378.3 340V851.7L615.3 660.8V148.3ZM71 660.8L307.3 851.7V340L71 148.3ZM686.3 660.8L922.6 851.7V340L686.3 148.3Z",
+        "width": 994
+      },
+      "search": [
+        "map"
+      ]
+    },
+    {
+      "uid": "kfzodo12ciruwganzy6h1bee2bpyz24d",
+      "css": "star",
+      "code": 59413,
+      "src": "modernpics"
+    },
+    {
+      "uid": "b714be5a812a474811604f700dfc87ce",
+      "css": "left-open",
+      "code": 61447,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "3d8cc269fdad8a4cda55a20542a84e5c",
+      "css": "credit-card",
+      "code": 59414,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "6a9f3405aba67bcaee81e7ea38946b27",
+      "css": "mobile",
+      "code": 59415,
+      "src": "linecons"
+    },
+    {
+      "uid": "d58dc0a0927a7dea2992f615f2fbf400",
+      "css": "wallet",
+      "code": 59416,
+      "src": "linecons"
     }
   ]
 }

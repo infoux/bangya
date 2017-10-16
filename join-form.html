@@ -54,7 +54,7 @@
   </header>
   <!-- E:header -->
   <!-- S:content -->
-  <div id="content" class="login">
+  <div id="content" class="join">
     <article id="navigator">
       <div class="container normal">
         <a class="home" href="/"><i class="icon-home"></i>HOME</a>
@@ -63,41 +63,49 @@
       </div>
     </article>
 
-    <section class="login-normal">
+    <section class="join-form">
       <div class="container">
-        <fieldset>
-          <legend class="sr-only">로그인</legend>
 
-          <h3>Login <small>로그인</small></h3>
+        <h3>회원가입</h3>
+
+        <fieldset>
+          <legend>회원정보</legend>
 
           <label class="sr-only" for="id">아이디</label>
-          <input id="id" type="text" placeholder="ID">
+          <input id="id" type="text" placeholder="아이디(E-Mail)를 입력하세요.">
+
+
+          <label class="sr-only" for="name">닉네임</label>
+          <input id="name" type="text" placeholder="닉네임을 입력하세요.">
+          <p>(닉네임은 2~10자 이내로 입력하십시오.)</p>
 
           <label class="sr-only" for="pw">비밀번호</label>
-          <input id="pw" type="password" placeholder="PW">
+          <input id="pw" type="password" placeholder="비밀번호를 입력하세요">
+          <p>(6~8자 영문, 숫자, 특수문자(!,@,#,$,%,^,~,_,-,+,=,(,),[,])등을 조합하여 입력하십시오.)</p>
 
-          <button class="submit">로그인</button>
+          <label class="sr-only" for="pw">비밀번호</label>
+          <input id="pw" type="password" placeholder="비밀번호를 한번 더 입력하세요">
+
         </fieldset>
+
+        <fieldset>
+          <legend>본인인증</legend>
+
+          <label class="sr-only" for="mobile">휴대폰번호</label>
+          <input id="mobile" type="text" placeholder="휴대폰 번호를 ‘-’ 없이 입력하세요.">
+          <button class="send">인증번호전송</button>
+
+
+          <label class="sr-only" for="number">인증번호입력</label>
+          <input id="number" type="text" placeholder="인증번호를 입력하세요.">
+
+        </fieldset>
+
+        <button class="ok">가입완료</button>
+
+
       </div>
     </section>
-
-    <section class="login-links">
-      <div class="container">
-        <a href="">ID찾기</a>
-        <a href="">비밀번호재설정</a>
-        <a href="">회원가입</a>
-      </div>
-    </section>
-
-    <section class="login-sns">
-      <div class="container">
-        <a class="kakao" href=""><i class="icon-kakao"></i>카카오 로그인</a>
-        <a class="facebook" href=""><i class="icon-facebook"></i>페이스북 로그인</a>
-        <a class="other" href="">비회원 예약확인</a>
-      </div>
-    </section>
-
-
 
   </div>
     <!-- E:content -->

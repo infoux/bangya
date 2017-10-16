@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>방야</title>
+  <link href="css/style.css" rel="stylesheet">
+  <!-- javaScript  -->
+
+
+  <script type="text/javascript" src="js/moment-with-locales.min.js"></script>
+  <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="js/jquery.daterangepicker.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.js"></script>
+  <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
+
+</head>
+
+
+<body>
+  <!-- S:skip_navi -->
+  <div class="skip_navi"> <a class="sr-only sr-only-focusable" href="#content">본문 바로가기</a> <a class="sr-only sr-only-focusable" href="#footer">푸터 바로가기</a> </div>
+  <!-- E:skip_navi -->
+  <!-- S:header -->
+  <header id="header">
+    <div class="container">
+      <h1><a href="/" title="방야 홈 바로가기">방야</a></h1>
+
+      <fieldset class="search-form">
+        <legend class="sr-only">통합검색</legend>
+        <div class="outline">
+          <h2 class="sr-only">통합검색</h2>
+          <label class="sr-only" for="search">검색어를 입력하세요</label>
+          <input id="search" type="text" placeholder="search">
+          <button>검색<i class="icon-search"></i></button>
+        </div>
+      </fieldset>
+
+      <div class="buttons">
+        <div class="outline">
+          <a href=""><i class="icon-user"></i>회원가입</a>
+          <a href=""><i class="icon-lock"></i>로그인</a>
+          <a href=""><i class="icon-check"></i>예약확인</a>
+        </div>
+      </div>
+      <div class="toggle">
+        <button class="search" name="search">검색토글<i class="icon-search"></i></button>
+        <button class="menu" name="menu">메뉴토글<i class="icon-menu"></i></button>
+      </div>
+
+    </div>
+  </header>
+  <!-- E:header -->
+  <!-- S:content -->
+  <div id="content" class="reservation">
+    <article id="navigator">
+      <div class="container normal">
+        <a class="home" href="/"><i class="icon-home"></i>HOME</a>
+        <a class="sub depth1" href="/"><i class="icon-right-open"></i>예약진행</a>
+
+      </div>
+    </article>
+
+    <div class="container">
+
+      <section class="room-info">
+          <h2 class="sr-only">선택된 객실정보</h2>
+          <ul class="list">
+            <li class="item">
+              <div class="photo">
+                <img src="images/@tmp02.jpg" alt="">
+              </div>
+              <div class="info">
+                <h3>Type A</h3>
+                <ul class="count">
+                  <li>기준인원 2명</li>
+                  <li>최대인원 4명</li>
+                </ul>
+                  <h4>빵야리조트</h4>
+                <p class="location">
+                  <i class="icon-location"></i> 제주특별자치도 제주시 서사로 92
+                </p>
+            </div>
+          </li>
+
+        </ul>
+      </section>
+
+
+    <section class="reservation-form">
+        <h2 class="sr-only">예약정보 입력</h2>
+
+        <fieldset>
+          <legend class="sr-only">예약정보</legend>
+
+          <h3>
+            금액
+            <small>1박 <strong>230,000원</small></strong>
+          </h3>
+          <dl>
+            <dt>예약자 정보 입력 <u>(필수)</u></dt>
+            <dd>
+
+              <label class="sr-only" for="name">예약자명</label>
+              <input id="name" type="text" placeholder="예약자명">
+
+              <label class="sr-only" for="name">휴대전화번호</label>
+              <input id="phone" type="text" placeholder="휴대전화">
+
+            </dd>
+            <dt>결제선택</dt>
+            <dd>
+              <input id="pay01" name='payment' type="radio" checked>
+              <label for="pay01"><i class="icon-credit-card"></i> 카드결제</label>
+
+              <input id="pay02" name='payment' type="radio">
+              <label for="pay02"><i class="icon-mobile"></i> 휴대폰결제</label>
+
+              <input id="pay03" name='payment' type="radio">
+              <label for="pay03"><i class="icon-wallet"></i> 실시간계좌이체</label>
+
+            </dd>
+
+          <dl>
+        </fieldset>
+    </section>
+    <section class="agree">
+
+          <h2 class="sr-only">이용약관동의</h2>
+          <input id="all" type="checkbox"><label for="all">전체동의</label>
+          <dl>
+            <dt><input id="agree01" type="checkbox"><label for="agree01">이용약관동의 (필수)</label> <button>내용보기<i>닫기</i></button></dt>
+            <dd>
+              <pre>
+야옹
+야옹
+야옹
+야옹
+야옹
+야옹
+야옹
+야옹
+야옹
+
+              </pre>
+            </dd>
+
+            <dt><input id="agree02" type="checkbox"><label for="agree02">개인정보 수집 및 이용동의 (필수)</label> <button>내용보기<i>닫기</i></button></dt>
+            <dd>야옹</dd>
+
+            <dt><input id="agree03" type="checkbox"><label for="agree03">위치 정보 이용약관 동의 (선택)</label> <button>내용보기<i>닫기</i></button></dt>
+            <dd>야옹</dd>
+
+            <dt><input id="agree04" type="checkbox"><label for="agree04">마케팅 정보 수신 동의 (선택)</label> <button>내용보기<i>닫기</i></button></dt>
+            <dd>야옹</dd>
+
+          </dl>
+    </section>
+
+    <section class="total">
+
+      <h2>결제정보</h2>
+      <div class="box">
+          <dl>
+            <dt>체크인</dt>
+            <dd>
+              2017-10-12 <u>14:00 이후</u>
+            </dd>
+
+            <dt>체크아웃</dt>
+            <dd>
+              2017-10-14 <u>14:00 이전</u>
+            </dd>
+          </dl>
+          <h4>이용기간 <small>1박 2일</small></h4>
+      </div>
+
+      <p class="total">결제금액 <strong>224,000원</strong></p>
+      <button class="ok">결제하기</button>
+    </section>
+  </div>
+
+
+
+
+  </div>
+    <!-- E:content -->
+    <!-- S:footer -->
+    <footer id="footer">
+
+      <nav class="footer-menu">
+        <div class="container">
+
+          <h2 class="sr-only">Footer 메뉴</h2>
+          <ul>
+            <li><a href="">공지사항</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">회사소개</a></li>
+            <li><a href="">이용약관</a></li>
+            <li><a href="">개인정보처리방침</a></li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <div class="container">
+
+        <address>
+          <strong>(주)인포마인드</strong>
+          <p>대표:강희석 (63176)제주특별자치도 제주시 서사로 92, 807(삼도일동, 제동해피죤)</p>
+          <p>Tel.064)712-4787 Fax. 064)712-4786</p>
+        </address>
+
+        <p class="copyright">© INFOMIND</p>
+      </div>
+    </footer>
+    <!-- E:footer -->
+  </body>
+
+  </html>

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>방야</title>
+  <link href="css/style.css" rel="stylesheet">
+  <!-- javaScript  -->
+
+
+  <script type="text/javascript" src="js/moment-with-locales.min.js"></script>
+  <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="js/jquery.daterangepicker.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.js"></script>
+  <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
+
+</head>
+
+
+<body>
+  <!-- S:skip_navi -->
+  <div class="skip_navi"> <a class="sr-only sr-only-focusable" href="#content">본문 바로가기</a> <a class="sr-only sr-only-focusable" href="#footer">푸터 바로가기</a> </div>
+  <!-- E:skip_navi -->
+  <!-- S:header -->
+  <header id="header">
+    <div class="container">
+      <h1><a href="/" title="방야 홈 바로가기">방야</a></h1>
+
+      <fieldset class="search-form">
+        <legend class="sr-only">통합검색</legend>
+        <div class="outline">
+          <h2 class="sr-only">통합검색</h2>
+          <label class="sr-only" for="search">검색어를 입력하세요</label>
+          <input id="search" type="text" placeholder="search">
+          <button>검색<i class="icon-search"></i></button>
+        </div>
+      </fieldset>
+
+      <div class="buttons">
+        <div class="outline">
+          <a href=""><i class="icon-user"></i>회원가입</a>
+          <a href=""><i class="icon-lock"></i>로그인</a>
+          <a href=""><i class="icon-check"></i>예약확인</a>
+        </div>
+      </div>
+      <div class="toggle">
+        <button class="search" name="search">검색토글<i class="icon-search"></i></button>
+        <button class="menu" name="menu">메뉴토글<i class="icon-menu"></i></button>
+      </div>
+
+    </div>
+  </header>
+  <!-- E:header -->
+  <!-- S:content -->
+  <div id="content" class="lodge">
+    <article id="navigator">
+      <div class="container">
+        <button class="modify" href="/"><i class="icon-pen"></i>일정수정</button>
+        <h2>제주</h2>
+        <p>2017.10.10 ~ 2017.10.10</p>
+        <p>성인 0명, 청소년 0명, 소아 0명</p>
+      </div>
+      <fieldset class="lodge-search">
+        <legend class="sr-only">숙박검색</legend>
+        <div class="container">
+          <button class="region"><i class="icon-location"></i><strong>지역선택</strong></button>
+          <button class="input-date"><i class="icon-calendar"></i><strong>체크인 ~ 체크아웃</strong></button>
+          <button class="count"><i class="icon-user"></i><strong>인원</strong></button>
+          <button class="submit">검색</button>
+          <button class="close">닫기</button>
+        </div>
+      </fieldset>
+    </article>
+
+    <section class="view-info">
+      <div class="container">
+        <div class="big-photo">
+
+          <ul class="slider">
+            <li><img src="images/@tmp02.jpg" alt=""></li>
+            <li><img src="images/@tmp02.jpg" alt=""></li>
+            <li><img src="images/@tmp02.jpg" alt=""></li>
+            <li><img src="images/@tmp02.jpg" alt=""></li>
+          </ul>
+          <button class="slider-prev">이전<i class="icon-left-open"></i></button>
+          <button class="slider-next">다음<i class="icon-right-open"></i></button>
+
+        </div>
+
+        <div class="info">
+
+          <h2>빵야게스트하우스</h2>
+          <p class="location">
+            <i class="icon-location"></i> 제주특별자치도 제주시 서사로 92
+          </p>
+          <p class="grade">
+            <i class="icon-star on"></i>
+            <i class="icon-star"></i>
+            <i class="icon-star"></i>
+            <i class="icon-star"></i>
+            <i class="icon-star"></i>
+            <u>(후기 100개)</u>
+          </p>
+          <p class="include">Wifi, 충전기대여, 식기완비</p>
+          <p class="price">~100,000</p>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="room-info">
+    <div class="container">
+      <h2>객실소개</h2>
+      <ul class="list">
+        <li class="item">
+          <div class="photo">
+            <img src="images/@tmp02.jpg" alt="">
+          </div>
+          <div class="photo">
+            <img src="images/@tmp02.jpg" alt="">
+          </div>
+
+          <div class="info">
+            <h3>Type A</h3>
+            <ul class="count">
+              <li>기준인원 2명</li>
+              <li>최대인원 4명</li>
+            </ul>
+            <p class="price">대실예약 <strong>45,000</strong><i>4시간</i></p>
+            <p class="price">숙박예약 <strong>100,000</strong><i>체크인 13:00~</i></p>
+
+            <button class="reservation">예약하기</button>
+        </div>
+      </li>
+      <li class="item">
+        <div class="photo">
+          <img src="images/@tmp02.jpg" alt="">
+        </div>
+        <div class="photo">
+          <img src="images/@tmp02.jpg" alt="">
+        </div>
+
+        <div class="info">
+          <h3>Type B</h3>
+          <ul class="count">
+            <li>기준인원 2명</li>
+            <li>최대인원 4명</li>
+          </ul>
+          <p class="price">대실예약 <strong>45,000</strong><i>4시간</i></p>
+          <p class="price">숙박예약 <strong>100,000</strong><i>체크인 13:00~</i></p>
+
+          <button class="reservation">예약하기</button>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+  <section class="price-info">
+    <div class="container">
+      <h2>요금정보 <small>준성수기 및 성수기요금은 숙소의 상황에 따라 달라질 수 있습니다.</small></h2>
+
+      <div class="table-outline">
+        <table>
+          <caption class="day">숙박이용요금</caption>
+          <thead>
+            <tr>
+              <th>객실종류</th>
+              <th>평일</th>
+              <th>휴일/공휴일</th>
+            <tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Type A</td>
+              <td>100,000원</td>
+              <td>15,000원</td>
+            </tr>
+            <tr>
+              <td>Type B</td>
+              <td>100,000원</td>
+              <td>15,000원</td>
+            </tr>
+          </tbody>
+        </table>
+
+          <table>
+            <caption class="time">대실이용요금</caption>
+            <thead>
+              <tr>
+                <th>객실종류</th>
+                <th>평일</th>
+                <th>휴일/공휴일</th>
+              <tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Type A</td>
+                <td>100,000원</td>
+                <td>15,000원</td>
+              </tr>
+              <tr>
+                <td>Type B</td>
+                <td>100,000원</td>
+                <td>15,000원</td>
+              </tr>
+            </tbody>
+          </table>
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <section class="include-info">
+    <div class="container">
+      <h2>편의시설</h2>
+      <p class="info">
+        Wifi, 충전기대여, 식기완비, 스파욕조, 셔틀버스운행, Bar 이용 무료, 휠체어대여, 기념사진촬영, 애완동물 반입 가능, 축구장, 식기완비
+      </p>
+    </div>
+  </section>
+
+  <section class="opinion">
+    <div class="container">
+      <h2>후기</h2>
+
+              <p class="grade">
+                <u>별점선택</u>
+                <a data="1"><i class="icon-star on" aria-hidden="true"></i></a>
+                <a data="2"><i class="icon-star on" aria-hidden="true"></i></a>
+                <a data="3"><i class="icon-star" aria-hidden="true"></i></a>
+                <a data="4"><i class="icon-star" aria-hidden="true"></i></a>
+                <a data="5"><i class="icon-star" aria-hidden="true"></i></a>
+              </p>
+              <div class="review">
+                <textarea placeholder="리뷰를 등록해주세요.&#13;&#10;홍보 및 비방성 글 등 사용자 리뷰 성격에 맞지 않는 글은 관리자에 의해 삭제 될 수 있습니다."></textarea>
+                <button>등록하기</button>
+                <ul>
+                  <li>
+                    <div>
+                      <h3>조동욱</h3>
+                      <p class="grade">
+                        <i class="icon-star on" aria-hidden="true"></i>
+                        <i class="icon-star on" aria-hidden="true"></i>
+                        <i class="icon-star on" aria-hidden="true"></i>
+                        <i class="icon-star on" aria-hidden="true"></i>
+                        <i class="icon-star" aria-hidden="true"></i>
+                      </p>
+                    </div>
+                    <p class="aside">
+                      <a href="#">수정</a>
+                      <a href="#">삭제</a>
+                      <span>2017-03-24</span>
+                    </p>
+                    <p class="text">성산일출봉에서 가족같은 분들과 해뜨는 모습보러 다녀왔어요<br>바람은 불었어도 좋은추억 많이 만들었습니다.</p>
+                  </li>
+                  <li>
+                    <div>
+                      <h3>최민구</h3>
+                      <p class="grade">
+                        <i class="icon-star on" aria-hidden="true"></i>
+                        <i class="icon-star on" aria-hidden="true"></i>
+                        <i class="icon-star" aria-hidden="true"></i>
+                        <i class="icon-star" aria-hidden="true"></i>
+                        <i class="icon-star" aria-hidden="true"></i>
+                      </p>
+                    </div>
+                    <p class="aside">
+                      <a href="#">수정</a>
+                      <a href="#">삭제</a>
+                      <span>2017-03-24</span>
+                    </p>
+                    <p class="text">
+                      성산일출봉 고등학교때 이후로 시간이 많이 흐른 후 첨 올라 가봤는데요ㅠㅋㅋㅋㅋㅋㅋ왤케 힘든지 숨차서 깜짝놀랬답니다.<br> 다섯번을 쉬어가며 영차영차 올라간 곳은 너무 아름다웠어용 해뜨는거 보고 소원빌고 해없어지는것도 보고 젤 마지막에 내려왔네요
+                    </p>
+                  </li>
+                  <li>
+                    <div>
+                      <h3>민성애비</h3>
+                      <p class="grade">
+                        <i class="icon-star on" aria-hidden="true"></i>
+                        <i class="icon-star" aria-hidden="true"></i>
+                        <i class="icon-star" aria-hidden="true"></i>
+                        <i class="icon-star" aria-hidden="true"></i>
+                        <i class="icon-star" aria-hidden="true"></i>
+                      </p>
+                    </div>
+                    <p class="aside">
+                      <a href="#">수정</a>
+                      <a href="#">삭제</a>
+                      <span>2017-03-24</span>
+                    </p>
+                    <p class="text">
+                      해돋이 보는데 정말 와우 탄성만 흘러나왔네요. 올라가는데 많이 힘들지도 않고 왜 해돋이 명소인지 실감했네요<br> 잘 다녀왔습니다.
+                    </p>
+                  </li>
+                </ul>
+                <div class="pagenation">
+                  <a class="move" href="">이전<i class="icon-left-open" aria-hidden="true"></i></a>
+                  <a href="">1</a>
+                  <a href="">2</a>
+                  <strong>3</strong>
+                  <a href="">4</a>
+                  <a href="">5</a>
+                  <a class="move" href="">다음<i class="icon-right-open" aria-hidden="true"></i></a>
+                </div>
+              </div>
+
+
+    </div>
+  </section>
+
+
+
+    <div class="region no-resize">
+      <p><input id="region01" class="sr-only" type="checkbox"><label for="region01"><i class="icon-check"></i>전라북도</label></p>
+      <p><input id="region02" class="sr-only" type="checkbox"><label for="region02"><i class="icon-check"></i>서귀포시</label></p>
+    </div>
+    <div class="count no-resize">
+      <div class="outline">
+        <div><label for="age01">성인</label><i class="icon-minus-circle"></i><input id="age01" type="text" value="0"><i class="icon-plus-circle"></i></div>
+        <div><label for="age02">청소년</label><i class="icon-minus-circle"></i><input id="age02" type="text" value="0"><i class="icon-plus-circle"></i></div>
+        <div><label for="age03">유아</label><i class="icon-minus-circle"></i><input id="age03" type="text" value="0"><i class="icon-plus-circle"></i></div>
+        <button>선택완료</button>
+      </div>
+    </div>
+  </section>
+
+
+
+  </div>
+  <!-- E:content -->
+  <!-- S:footer -->
+  <footer id="footer">
+
+    <nav class="footer-menu">
+      <div class="container">
+
+        <h2 class="sr-only">Footer 메뉴</h2>
+        <ul>
+          <li><a href="">공지사항</a></li>
+          <li><a href="">FAQ</a></li>
+          <li><a href="">회사소개</a></li>
+          <li><a href="">이용약관</a></li>
+          <li><a href="">개인정보처리방침</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <div class="container">
+
+      <address>
+          <strong>(주)인포마인드</strong>
+          <p>대표:강희석 (63176)제주특별자치도 제주시 서사로 92, 807(삼도일동, 제동해피죤)</p>
+          <p>Tel.064)712-4787 Fax. 064)712-4786</p>
+        </address>
+
+      <p class="copyright">© INFOMIND</p>
+    </div>
+  </footer>
+  <!-- E:footer -->
+</body>
+
+</html>
