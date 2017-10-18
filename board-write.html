@@ -69,104 +69,42 @@
     </header>
     <!-- E:header -->
     <!-- S:content -->
-    <div id="content" class="reservation-view">
+    <div id="content" class="board">
         <article id="navigator">
             <div class="container normal">
                 <a class="home" href="/">
                     <i class="icon-home"></i>HOME</a>
                 <a class="sub depth1" href="/">
-                    <i class="icon-right-open"></i>예약내역</a>
+                    <i class="icon-right-open"></i>공지사항</a>
 
             </div>
         </article>
 
-        <div class="container">
+        <section class="write">
+            <div class="container">
 
+                <h2>공지사항</h2>
 
-            <h2>상세내역조회
-                <small>예약완료 후, 최근 2달간 내역이 보여집니다.</small>
-            </h2>
-
-            <section class="reservation-view">
-
-                <ul class="list">
-                    <li class="item">
-
-                        <h3>방야 청소년 종합 수련원</h3>
-                        <p class="state state01">사용전</p>
-
-                        <div class="detail">
-                            <h4>Type A</h4>
-                            <p>제주특별자치도 제주시 서사로 92</p>
-                            <p>기준인원 2명 최대인원 4명</p>
-                        </div>
-
-                        <dl class="data">
-                            <dt>예약번호</dt>
-                            <dd>01020304050060709</dd>
-
-                            <dt>예약일</dt>
-                            <dd>2017. 10. 12 (월)</dd>
-
-                            <dt>입실일</dt>
-                            <dd>2017. 11. 12 (월) 14:00 이후</dd>
-
-                            <dt>퇴실일</dt>
-                            <dd>2017. 11. 12 (월) 12:00 이전</dd>
-
-                            <dt>판매금액</dt>
-                            <dd>123,000원</dd>
-
-                        </dl>
-
-                    </li>
-
-                </ul>
-
-
-            </section>
-
-
-            <section class="total">
-
-                <h2>결제정보</h2>
-                <div class="box">
-                    <dl>
-                        <dt>결제수단</dt>
-                        <dd>
-                            실시간 계좌이체
-                        </dd>
-
-                        <dt>판매금액</dt>
-                        <dd>
-                            800,000원
-                        </dd>
-
-                        <dt>결제금액</dt>
-                        <dd>
-                            800,000원
-                        </dd>
-                        <dt>사용쿠폰</dt>
-                        <dd>
-                            0
-                        </dd>
-                        <dt>사용포인트</dt>
-                        <dd>
-                            0P
-                        </dd>
-                        <dt>기본적립포인트</dt>
-                        <dd>
-                            0P
-                        </dd>
-                    </dl>
+                <form>
+                    <input type="text" placeholder="제목을 입력해 주세요." class="subject" />
+                    <textarea placeholder="내용을 입력해주세요."></textarea>
+                    <div class="file">
+                        <button>첨부파일 추가
+                            <i class="icon-plus-circle" aria-hidden="true"></i>
+                        </button>
+                        <span>파일 최대 업로드 용량은 10Mb 입니다.</span>
+                    </div>
+                </form>
+                <div class="btn-set">
+                    <button href="#" class="ok">등록하기</button>
+                    <button href="#" class="cancle">취소</button>
                 </div>
-            </section>
 
-            <div class="btn-set">
-                <button class="list">목록으로</button>
-                <button class="cancle">예약취소</button>
+
+
             </div>
-        </div>
+        </section>
+
 
 
     </div>

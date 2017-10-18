@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>방야</title>
+    <link href="css/style.css" rel="stylesheet">
+    <!-- javaScript  -->
+
+
+    <script type="text/javascript" src="js/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.daterangepicker.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+
+</head>
+
+
+<body>
+    <!-- S:skip_navi -->
+    <div class="skip_navi">
+        <a class="sr-only sr-only-focusable" href="#content">본문 바로가기</a>
+        <a class="sr-only sr-only-focusable" href="#footer">푸터 바로가기</a>
+    </div>
+    <!-- E:skip_navi -->
+    <!-- S:header -->
+    <header id="header">
+        <div class="container">
+            <h1>
+                <a href="/" title="방야 홈 바로가기">방야</a>
+            </h1>
+
+            <fieldset class="search-form">
+                <legend class="sr-only">통합검색</legend>
+                <div class="outline">
+                    <h2 class="sr-only">통합검색</h2>
+                    <label class="sr-only" for="search">검색어를 입력하세요</label>
+                    <input id="search" type="text" placeholder="search">
+                    <button>검색
+                        <i class="icon-search"></i>
+                    </button>
+                </div>
+            </fieldset>
+
+            <div class="buttons">
+                <div class="outline">
+                    <a href="">
+                        <i class="icon-user"></i>회원가입</a>
+                    <a href="">
+                        <i class="icon-lock"></i>로그인</a>
+                    <a href="">
+                        <i class="icon-check"></i>예약확인</a>
+                </div>
+            </div>
+            <div class="toggle">
+                <button class="search" name="search">검색토글
+                    <i class="icon-search"></i>
+                </button>
+                <button class="menu" name="menu">메뉴토글
+                    <i class="icon-menu"></i>
+                </button>
+            </div>
+
+        </div>
+    </header>
+    <!-- E:header -->
+    <!-- S:content -->
+    <div id="content" class="board">
+        <article id="navigator">
+            <div class="container normal">
+                <a class="home" href="/">
+                    <i class="icon-home"></i>HOME</a>
+                <a class="sub depth1" href="/">
+                    <i class="icon-right-open"></i>공지사항</a>
+
+            </div>
+        </article>
+
+        <section class="view">
+            <div class="container">
+
+                <h2>공지사항</h2>
+
+                <div class="board-head">
+                    <h3>3월 제주여행추억공유 이벤트 야옹 멍멍 안내</h3>
+                    <p>
+                        <span>작성자 :
+                            <strong>홍길동</strong>
+                        </span>
+                        <span class="date">작성일 :
+                            <strong>2017.12.21</strong>
+                        </span>
+                    </p>
+                </div>
+                <div class="text">
+                    3월 제주여행추억공유 이벤트 안내
+
+                    <img src="http://www.openjeju.net/upload_data/board_data/EVENT/149879087348889.jpg">
+
+                    <ul class="files">
+                        <li>
+                            <a href="">filename.png</a>
+                        </li>
+                        <li>
+                            <a href="">filename.png</a>
+                        </li>
+                        <li>
+                            <a href="">filename.png</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+
+                <div class="reply">
+                    <div class="container">
+                        <h2 class="sr-only">댓글</h2>
+
+                        <div class="list">
+                            <textarea placeholder="홍보 및 비방성 글 등 용도에 맞지 않는 글은 관리자에 의해 삭제 될 수 있습니다."></textarea>
+                            <button>등록하기</button>
+                            <ul>
+                                <li>
+                                    <div>
+                                        <h3>조동욱</h3>
+                                    </div>
+                                    <p class="aside">
+                                        <a href="#">수정</a>
+                                        <a href="#">삭제</a>
+                                        <span>2017-03-24</span>
+                                    </p>
+                                    <p class="text">성산일출봉에서 가족같은 분들과 해뜨는 모습보러 다녀왔어요
+                                        <br>바람은 불었어도 좋은추억 많이 만들었습니다.</p>
+                                </li>
+                                <li>
+                                    <div>
+                                        <h3>최민구</h3>
+                                    </div>
+                                    <p class="aside">
+                                        <a href="#">수정</a>
+                                        <a href="#">삭제</a>
+                                        <span>2017-03-24</span>
+                                    </p>
+                                    <p class="text">
+                                        성산일출봉 고등학교때 이후로 시간이 많이 흐른 후 첨 올라 가봤는데요ㅠㅋㅋㅋㅋㅋㅋ왤케 힘든지 숨차서 깜짝놀랬답니다.
+                                        <br> 다섯번을 쉬어가며 영차영차 올라간 곳은 너무 아름다웠어용 해뜨는거 보고 소원빌고 해없어지는것도 보고 젤 마지막에 내려왔네요
+                                    </p>
+                                </li>
+                                <li>
+                                    <div>
+                                        <h3>민성애비</h3>
+                                    </div>
+                                    <p class="aside">
+                                        <a href="#">수정</a>
+                                        <a href="#">삭제</a>
+                                        <span>2017-03-24</span>
+                                    </p>
+                                    <p class="text">
+                                        해돋이 보는데 정말 와우 탄성만 흘러나왔네요. 올라가는데 많이 힘들지도 않고 왜 해돋이 명소인지 실감했네요
+                                        <br> 잘 다녀왔습니다.
+                                    </p>
+                                </li>
+                            </ul>
+                            <div class="pagenation">
+                                <a class="move" href="">이전
+                                    <i class="icon-left-open" aria-hidden="true"></i>
+                                </a>
+                                <a href="">1</a>
+                                <a href="">2</a>
+                                <strong>3</strong>
+                                <a href="">4</a>
+                                <a href="">5</a>
+                                <a class="move" href="">다음
+                                    <i class="icon-right-open" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="btn-set">
+                            <a href="#">목록으로</a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+
+
+
+    </div>
+    <!-- E:content -->
+    <!-- S:footer -->
+    <footer id="footer">
+
+        <nav class="footer-menu">
+            <div class="container">
+
+                <h2 class="sr-only">Footer 메뉴</h2>
+                <ul>
+                    <li>
+                        <a href="">공지사항</a>
+                    </li>
+                    <li>
+                        <a href="">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="">회사소개</a>
+                    </li>
+                    <li>
+                        <a href="">이용약관</a>
+                    </li>
+                    <li>
+                        <a href="">개인정보처리방침</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <div class="container">
+
+            <address>
+                <strong>(주)인포마인드</strong>
+                <p>대표:강희석 (63176)제주특별자치도 제주시 서사로 92, 807(삼도일동, 제동해피죤)</p>
+                <p>Tel.064)712-4787 Fax. 064)712-4786</p>
+            </address>
+
+            <p class="copyright">© INFOMIND</p>
+        </div>
+    </footer>
+    <!-- E:footer -->
+</body>
+
+</html>
